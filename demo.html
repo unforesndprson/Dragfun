@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+		    *{
+		    	margin: 0;
+		    }
+			.container{
+				width:1000px;
+				height: 600px;
+				margin:0 auto;
+				border: 1px solid #ccc;
+			    -webkit-box-shadow: 10px 10px 7px #AAA;
+			    -moz-box-shadow: 10px 10px 7px #AAA;
+			    box-shadow: 10px 10px 7px #AAA;
+			    position: relative;
+			    overflow: hidden;
+			}
+			.container img{
+				position: absolute;
+			}
+			#pink-img{
+				width: 100px;
+				height: 100px;
+				position: absolute;
+			    top: 0;
+			    left: 0;
+			}
+			img{
+				display: block;
+				border-radius: 50%;
+				overflow: hidden;
+			}
+		
+		</style>
+	</head>
+	<body>
+		<div class="container">
+				<img src="img/3.png" id="pink-img"/>
+		</div>
+	</body>
+	<script type="text/javascript" src="index.js"></script>
+	<script>
+		var ele = document.querySelector('#pink-img');
+		var st =document.querySelector('.container');
+		var pink = new Dragfun(ele,st);
+		
+	</script>
+</html>
